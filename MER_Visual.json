@@ -1,0 +1,2374 @@
+{
+  "$schema": "https://raw.githubusercontent.com/dineug/erd-editor/main/json-schema/schema.json",
+  "version": "3.0.0",
+  "settings": {
+    "width": 5000,
+    "height": 5000,
+    "scrollTop": -2295.6945,
+    "scrollLeft": -2021.5125,
+    "zoomLevel": 0.16,
+    "show": 431,
+    "database": 4,
+    "databaseName": "Biblioteca",
+    "canvasType": "ERD",
+    "language": 16,
+    "tableNameCase": 2,
+    "columnNameCase": 4,
+    "bracketType": 1,
+    "relationshipDataTypeSync": true,
+    "relationshipOptimization": false,
+    "columnOrder": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32,
+      64
+    ],
+    "maxWidthComment": -1,
+    "ignoreSaveSettings": 0
+  },
+  "doc": {
+    "tableIds": [
+      "e8c33e5b-a4e8-42e3-920a-b8a82844de6a",
+      "bfd3f76b-2ab6-4752-bd1c-9512a57a4869",
+      "eefa57cf-9c11-4f80-b170-9255e6020095",
+      "77887b44-bfba-497f-87a3-31c795ed4cfd",
+      "d37f0d37-cc4a-4171-942c-4a3ba3b49f43",
+      "322c4d23-a001-4e26-b872-20e77a52763c",
+      "fa1587b8-2958-4f78-9eb4-7711eed31d84",
+      "e2e61e9f-d7de-44a2-8f99-f6219827fd72",
+      "4b612336-c20d-426e-ab83-481cb5a8af58",
+      "f86d55fd-5905-4bf1-8789-e9de6741f035",
+      "tb-tipo-obra-001",
+      "tb-area-conhecimento-001",
+      "tb-autor-001",
+      "tb-obra-autor-001"
+    ],
+    "relationshipIds": [
+      "c45fc320-e301-4896-984b-f6b1976063af",
+      "0741b0d5-8f45-48cf-8dc4-de0d74595b47",
+      "e3fa0430-fe52-4974-bf0d-50d84e5de419",
+      "c0b9d1cd-28dc-4d39-a656-c84b371a1f0f",
+      "7def7094-9985-4c21-bb69-5c27b47cf2db",
+      "7010903c-7eb5-49e8-a1d5-868ff077d7b7",
+      "2e062365-4fad-4343-8342-cd92436a5791",
+      "9879dc35-0b3e-48d2-81a7-9d56b6aaced4",
+      "18437002-a9c5-44cd-b12f-6b98617b866c",
+      "rel-tipo-obra-obra-001",
+      "rel-area-conhecimento-obra-001",
+      "rel-autor-obra-autor-001",
+      "rel-obra-obra-autor-001"
+    ],
+    "indexIds": [
+      "idx-multa-emprestimo-unique"
+    ],
+    "memoIds": []
+  },
+  "collections": {
+    "tableEntities": {
+      "e8c33e5b-a4e8-42e3-920a-b8a82844de6a": {
+        "id": "e8c33e5b-a4e8-42e3-920a-b8a82844de6a",
+        "name": "usuario",
+        "comment": "Tabela pai de usuarios do sistema (alunos e professores)",
+        "columnIds": [
+          "6454e920-c13b-4d66-992d-327822fb9790",
+          "dba8e065-a1b4-4727-93c2-4f17a2507ee7",
+          "c956b32d-a081-4e47-834c-764b5a67c5bf",
+          "cbb8d806-292c-457a-a8a8-ae38c602dddc",
+          "f318c988-facd-46f9-a98f-a216281beb2f",
+          "f37d2ccb-6181-40e5-9f35-aa43aee87330"
+        ],
+        "seqColumnIds": [
+          "6454e920-c13b-4d66-992d-327822fb9790",
+          "dba8e065-a1b4-4727-93c2-4f17a2507ee7",
+          "c956b32d-a081-4e47-834c-764b5a67c5bf",
+          "cbb8d806-292c-457a-a8a8-ae38c602dddc",
+          "f318c988-facd-46f9-a98f-a216281beb2f",
+          "f37d2ccb-6181-40e5-9f35-aa43aee87330"
+        ],
+        "ui": {
+          "x": 2198.252,
+          "y": 2590.8138,
+          "zIndex": 2,
+          "widthName": 60,
+          "widthComment": 298,
+          "color": ""
+        },
+        "meta": {
+          "updateAt": 1780335148461,
+          "createAt": 1779564239682
+        }
+      },
+      "bfd3f76b-2ab6-4752-bd1c-9512a57a4869": {
+        "id": "bfd3f76b-2ab6-4752-bd1c-9512a57a4869",
+        "name": "aluno",
+        "comment": "Tabela filha contendo dados especificos de alunos",
+        "columnIds": [
+          "705ba437-429e-49ad-91ec-2fe9fb82798e",
+          "2150f8e6-0ca8-4541-9838-624bd95b9e25",
+          "589aec87-4c2c-4b06-a838-123953cf776d",
+          "b1a42f51-e1c8-4eca-a3e5-04957319f944"
+        ],
+        "seqColumnIds": [
+          "705ba437-429e-49ad-91ec-2fe9fb82798e",
+          "2150f8e6-0ca8-4541-9838-624bd95b9e25",
+          "589aec87-4c2c-4b06-a838-123953cf776d",
+          "b1a42f51-e1c8-4eca-a3e5-04957319f944"
+        ],
+        "ui": {
+          "x": 3160.2494,
+          "y": 2664.2123,
+          "zIndex": 2,
+          "widthName": 60,
+          "widthComment": 266,
+          "color": ""
+        },
+        "meta": {
+          "updateAt": 1780335205271,
+          "createAt": 1779564239682
+        }
+      },
+      "eefa57cf-9c11-4f80-b170-9255e6020095": {
+        "id": "eefa57cf-9c11-4f80-b170-9255e6020095",
+        "name": "professor",
+        "comment": "Tabela filha contendo dados especificos de professores",
+        "columnIds": [
+          "70ed6380-21f9-4ab7-b24c-ab965c57ee41",
+          "3a3ba345-6b25-44b5-baad-07b5b63a4c8d",
+          "75ed566c-7888-4e13-b911-eca0a6446c26",
+          "798fc5d1-bb28-4043-953e-94ce2b21642c",
+          "895e3d30-3c74-48ee-a7ca-abdaee9bf155"
+        ],
+        "seqColumnIds": [
+          "70ed6380-21f9-4ab7-b24c-ab965c57ee41",
+          "3a3ba345-6b25-44b5-baad-07b5b63a4c8d",
+          "75ed566c-7888-4e13-b911-eca0a6446c26",
+          "798fc5d1-bb28-4043-953e-94ce2b21642c",
+          "c421720f-3e37-40df-9251-6930c05d7b64",
+          "895e3d30-3c74-48ee-a7ca-abdaee9bf155",
+          "f784a13c-d5b7-46ed-b229-09a72c7ea0c9"
+        ],
+        "ui": {
+          "x": 1387.2166,
+          "y": 2652.4433,
+          "zIndex": 2,
+          "widthName": 60,
+          "widthComment": 292,
+          "color": ""
+        },
+        "meta": {
+          "updateAt": 1780335386440,
+          "createAt": 1779564239682
+        }
+      },
+      "tb-tipo-obra-001": {
+        "id": "tb-tipo-obra-001",
+        "name": "tipo_obra",
+        "comment": "Tabela auxiliar com os tipos de obra disponiveis",
+        "columnIds": [
+          "col-tipo-obra-id",
+          "col-tipo-obra-descricao"
+        ],
+        "seqColumnIds": [
+          "col-tipo-obra-id",
+          "col-tipo-obra-descricao"
+        ],
+        "ui": {
+          "x": 1426.4706,
+          "y": 3991.1764,
+          "zIndex": 2,
+          "widthName": 60,
+          "widthComment": 254,
+          "color": ""
+        },
+        "meta": {
+          "updateAt": 1780335306177,
+          "createAt": 1779800000001
+        }
+      },
+      "tb-area-conhecimento-001": {
+        "id": "tb-area-conhecimento-001",
+        "name": "area_conhecimento",
+        "comment": "Areas do conhecimento para classificacao das obras (ex: Banco de Dados, Saude, Psicologia)",
+        "columnIds": [
+          "col-area-id",
+          "col-area-descricao"
+        ],
+        "seqColumnIds": [
+          "col-area-id",
+          "col-area-descricao"
+        ],
+        "ui": {
+          "x": 1425.6302,
+          "y": 4124.79,
+          "zIndex": 2,
+          "widthName": 105,
+          "widthComment": 488,
+          "color": ""
+        },
+        "meta": {
+          "updateAt": 1780335301126,
+          "createAt": 1779800000002
+        }
+      },
+      "tb-autor-001": {
+        "id": "tb-autor-001",
+        "name": "autor",
+        "comment": "Cadastro de autores de obras",
+        "columnIds": [
+          "col-autor-id",
+          "col-autor-nome",
+          "col-autor-lattes"
+        ],
+        "seqColumnIds": [
+          "col-autor-id",
+          "col-autor-nome",
+          "col-autor-lattes"
+        ],
+        "ui": {
+          "x": 513.4153,
+          "y": 4659.934,
+          "zIndex": 2,
+          "widthName": 60,
+          "widthComment": 158,
+          "color": ""
+        },
+        "meta": {
+          "updateAt": 1780335325830,
+          "createAt": 1779800000003
+        }
+      },
+      "tb-obra-autor-001": {
+        "id": "tb-obra-autor-001",
+        "name": "obra_autor",
+        "comment": "Tabela associativa N:N entre obra e autor",
+        "columnIds": [
+          "col-obra-autor-obra-id",
+          "col-obra-autor-autor-id",
+          "col-obra-autor-ordem"
+        ],
+        "seqColumnIds": [
+          "col-obra-autor-obra-id",
+          "col-obra-autor-autor-id",
+          "col-obra-autor-ordem"
+        ],
+        "ui": {
+          "x": 554.0215,
+          "y": 4407.1429,
+          "zIndex": 2,
+          "widthName": 60,
+          "widthComment": 219,
+          "color": ""
+        },
+        "meta": {
+          "updateAt": 1780345995510,
+          "createAt": 1779800000004
+        }
+      },
+      "77887b44-bfba-497f-87a3-31c795ed4cfd": {
+        "id": "77887b44-bfba-497f-87a3-31c795ed4cfd",
+        "name": "obra",
+        "comment": "Catalogo contendo os metadados de obras (livros, teses, dissertacoes, periodicos)",
+        "columnIds": [
+          "45b5fa59-9be8-42c3-ab8b-92da23478ae9",
+          "col-obra-tipo-id",
+          "col-obra-area-id",
+          "99c6194b-e1a0-4e2c-8b40-eb0b5ec88537",
+          "e93a267d-568f-49cb-8fdb-361e13c7bb71",
+          "f3d96ef8-5e50-4885-ae95-f4daf5bb90fe",
+          "d797e8eb-44d5-4611-bf52-239e05e81395",
+          "eqVz0JuCR7sIQxYx7-Ffr",
+          "e1edf898-1cc1-4b42-ac58-a852a3c6e8d0"
+        ],
+        "seqColumnIds": [
+          "45b5fa59-9be8-42c3-ab8b-92da23478ae9",
+          "col-obra-tipo-id",
+          "col-obra-area-id",
+          "99c6194b-e1a0-4e2c-8b40-eb0b5ec88537",
+          "e93a267d-568f-49cb-8fdb-361e13c7bb71",
+          "f3d96ef8-5e50-4885-ae95-f4daf5bb90fe",
+          "d797e8eb-44d5-4611-bf52-239e05e81395",
+          "eqVz0JuCR7sIQxYx7-Ffr",
+          "e1edf898-1cc1-4b42-ac58-a852a3c6e8d0"
+        ],
+        "ui": {
+          "x": 475.7827,
+          "y": 3975.0524,
+          "zIndex": 2,
+          "widthName": 60,
+          "widthComment": 433,
+          "color": ""
+        },
+        "meta": {
+          "updateAt": 1780335314708,
+          "createAt": 1779564239682
+        }
+      },
+      "d37f0d37-cc4a-4171-942c-4a3ba3b49f43": {
+        "id": "d37f0d37-cc4a-4171-942c-4a3ba3b49f43",
+        "name": "exemplar",
+        "comment": "Copia fisica de uma obra com tag RFID unica para controle fisico",
+        "columnIds": [
+          "2d542125-2fa7-4724-abf7-3ae5c05c213d",
+          "ce71eeba-618a-4f99-afa4-6f5b97d29db4",
+          "794a4494-39ed-4618-99e3-ab6a68095209",
+          "725936e1-244e-4c04-8c88-ff714c18683c",
+          "s5V07pTWDFH0wxYwyq3qr",
+          "col-exemplar-data-aquisicao"
+        ],
+        "seqColumnIds": [
+          "2d542125-2fa7-4724-abf7-3ae5c05c213d",
+          "ce71eeba-618a-4f99-afa4-6f5b97d29db4",
+          "794a4494-39ed-4618-99e3-ab6a68095209",
+          "725936e1-244e-4c04-8c88-ff714c18683c",
+          "s5V07pTWDFH0wxYwyq3qr",
+          "col-exemplar-data-aquisicao"
+        ],
+        "ui": {
+          "x": 258.2844,
+          "y": 3289.6854,
+          "zIndex": 2,
+          "widthName": 60,
+          "widthComment": 343,
+          "color": ""
+        },
+        "meta": {
+          "updateAt": 1780335734284,
+          "createAt": 1779564239682
+        }
+      },
+      "322c4d23-a001-4e26-b872-20e77a52763c": {
+        "id": "322c4d23-a001-4e26-b872-20e77a52763c",
+        "name": "usuario_telefone",
+        "comment": "Tabela de telefones associados ao usuario (1:N)",
+        "columnIds": [
+          "b5affa2e-829f-435c-9a87-8366d44f84fb",
+          "6ae983c4-5824-4fc8-b5bb-9421be8b4b24",
+          "ed85d390-91a2-4b7b-89ba-f615532fc166",
+          "4c7b07b3-af4a-4783-bf78-73447c2c4673"
+        ],
+        "seqColumnIds": [
+          "b5affa2e-829f-435c-9a87-8366d44f84fb",
+          "6ae983c4-5824-4fc8-b5bb-9421be8b4b24",
+          "ed85d390-91a2-4b7b-89ba-f615532fc166",
+          "4c7b07b3-af4a-4783-bf78-73447c2c4673"
+        ],
+        "ui": {
+          "x": 2948.6288,
+          "y": 2240.2101,
+          "zIndex": 2,
+          "widthName": 89,
+          "widthComment": 251,
+          "color": ""
+        },
+        "meta": {
+          "updateAt": 1780335336156,
+          "createAt": 1779564239682
+        }
+      },
+      "fa1587b8-2958-4f78-9eb4-7711eed31d84": {
+        "id": "fa1587b8-2958-4f78-9eb4-7711eed31d84",
+        "name": "usuario_endereco",
+        "comment": "Tabela de enderecos associados ao usuario (1:N)",
+        "columnIds": [
+          "36e0419d-af03-4619-a482-8ab5b8d5ff9f",
+          "0dc0102d-1fa7-4f6a-bb65-0b249bd4b51b",
+          "4b8f1bb6-8f0a-44ed-87f0-636d386f1445",
+          "7f606aba-1089-4b33-b5f1-762a4c6a94ed",
+          "8ad37453-dbdb-4fa1-ba5f-a66f5f42e418",
+          "21ed6231-ecea-4987-a90a-baee585ca47e",
+          "751c26a7-f8d8-4f57-8944-d408d8d64b90",
+          "0c53eb3e-35a6-4b25-8e07-79f28b2d1119",
+          "52195446-74c6-4a3e-8f65-981871abd055"
+        ],
+        "seqColumnIds": [
+          "36e0419d-af03-4619-a482-8ab5b8d5ff9f",
+          "0dc0102d-1fa7-4f6a-bb65-0b249bd4b51b",
+          "4b8f1bb6-8f0a-44ed-87f0-636d386f1445",
+          "7f606aba-1089-4b33-b5f1-762a4c6a94ed",
+          "8ad37453-dbdb-4fa1-ba5f-a66f5f42e418",
+          "21ed6231-ecea-4987-a90a-baee585ca47e",
+          "751c26a7-f8d8-4f57-8944-d408d8d64b90",
+          "0c53eb3e-35a6-4b25-8e07-79f28b2d1119",
+          "52195446-74c6-4a3e-8f65-981871abd055"
+        ],
+        "ui": {
+          "x": 2247.2736,
+          "y": 1866.2806,
+          "zIndex": 2,
+          "widthName": 95,
+          "widthComment": 257,
+          "color": ""
+        },
+        "meta": {
+          "updateAt": 1780335217491,
+          "createAt": 1779564239682
+        }
+      },
+      "e2e61e9f-d7de-44a2-8f99-f6219827fd72": {
+        "id": "e2e61e9f-d7de-44a2-8f99-f6219827fd72",
+        "name": "emprestimo",
+        "comment": "Registro de transacoes de emprestimos e devolucoes. Status calculado via query: Ativo/Atrasado/Devolvido",
+        "columnIds": [
+          "71d2ab0c-9442-4b1f-8c3d-bd074728a5b6",
+          "32e9640c-9ae1-4ff0-b090-740d824b6d1c",
+          "a0ef32fc-e8e8-434b-826e-d0eb9bb0124e",
+          "dfa3c03c-cf2f-4def-8bb9-9fbea49e7bd6",
+          "dde06e13-d028-4ae5-aabe-d269f6fe99de",
+          "7e637d45-2705-417f-a0b0-a3796d091cf5",
+          "col-emprestimo-valor-dia-multa"
+        ],
+        "seqColumnIds": [
+          "71d2ab0c-9442-4b1f-8c3d-bd074728a5b6",
+          "32e9640c-9ae1-4ff0-b090-740d824b6d1c",
+          "a0ef32fc-e8e8-434b-826e-d0eb9bb0124e",
+          "dfa3c03c-cf2f-4def-8bb9-9fbea49e7bd6",
+          "dde06e13-d028-4ae5-aabe-d269f6fe99de",
+          "7e637d45-2705-417f-a0b0-a3796d091cf5",
+          "col-emprestimo-valor-dia-multa"
+        ],
+        "ui": {
+          "x": 2144.0729,
+          "y": 3279.1771,
+          "zIndex": 2,
+          "widthName": 66,
+          "widthComment": 569,
+          "color": ""
+        },
+        "meta": {
+          "updateAt": 1780335161637,
+          "createAt": 1779564239682
+        }
+      },
+      "4b612336-c20d-426e-ab83-481cb5a8af58": {
+        "id": "4b612336-c20d-426e-ab83-481cb5a8af58",
+        "name": "multa",
+        "comment": "Multas geradas por atraso nos emprestimos de livros",
+        "columnIds": [
+          "5357b443-2c44-441a-a931-ce0938cd7465",
+          "634798da-0628-4d73-8683-077fd1cf48e6",
+          "779ae1a3-d890-48f3-93ac-103cad7473f7",
+          "a0acec97-b7b9-4e2c-9356-e93f1dec129f",
+          "e06a3148-4eaa-415e-80e8-1f2466dfee4d",
+          "6813dd79-e106-430d-a7fb-cb7c08e86117",
+          "c40c158f-2102-4a33-9597-0ec39ea25c62"
+        ],
+        "seqColumnIds": [
+          "5357b443-2c44-441a-a931-ce0938cd7465",
+          "634798da-0628-4d73-8683-077fd1cf48e6",
+          "779ae1a3-d890-48f3-93ac-103cad7473f7",
+          "a0acec97-b7b9-4e2c-9356-e93f1dec129f",
+          "e06a3148-4eaa-415e-80e8-1f2466dfee4d",
+          "6813dd79-e106-430d-a7fb-cb7c08e86117",
+          "c40c158f-2102-4a33-9597-0ec39ea25c62"
+        ],
+        "ui": {
+          "x": 3321.513,
+          "y": 3277.8899,
+          "zIndex": 2,
+          "widthName": 60,
+          "widthComment": 282,
+          "color": ""
+        },
+        "meta": {
+          "updateAt": 1780335164309,
+          "createAt": 1779564239682
+        }
+      },
+      "f86d55fd-5905-4bf1-8789-e9de6741f035": {
+        "id": "f86d55fd-5905-4bf1-8789-e9de6741f035",
+        "name": "registro_acesso",
+        "comment": "Logs de entrada e saida fisica da biblioteca via portal RFID",
+        "columnIds": [
+          "1fc2c4c3-5d20-4875-b762-fea90d9c210f",
+          "90a9750d-34c8-4c15-a52f-5581a678b740",
+          "05c6a222-0a6f-498b-84a9-c1b38d3993f1",
+          "8595233a-d82a-4859-8641-2ffb711c9f0d"
+        ],
+        "seqColumnIds": [
+          "1fc2c4c3-5d20-4875-b762-fea90d9c210f",
+          "90a9750d-34c8-4c15-a52f-5581a678b740",
+          "05c6a222-0a6f-498b-84a9-c1b38d3993f1",
+          "8595233a-d82a-4859-8641-2ffb711c9f0d"
+        ],
+        "ui": {
+          "x": 1528.2433,
+          "y": 2234.6924,
+          "zIndex": 2,
+          "widthName": 83,
+          "widthComment": 309,
+          "color": ""
+        },
+        "meta": {
+          "updateAt": 1780345778467,
+          "createAt": 1779564239682
+        }
+      },
+      "kpWVX38vJAZGFx3uAFXNE": {
+        "id": "kpWVX38vJAZGFx3uAFXNE",
+        "name": "",
+        "comment": "",
+        "columnIds": [],
+        "seqColumnIds": [],
+        "ui": {
+          "x": 956.8947,
+          "y": 1303.3656,
+          "zIndex": 3,
+          "widthName": 60,
+          "widthComment": 60,
+          "color": ""
+        },
+        "meta": {
+          "updateAt": 1780345567691,
+          "createAt": 1780345564034
+        }
+      }
+    },
+    "tableColumnEntities": {
+      "6454e920-c13b-4d66-992d-327822fb9790": {
+        "id": "6454e920-c13b-4d66-992d-327822fb9790",
+        "tableId": "e8c33e5b-a4e8-42e3-920a-b8a82844de6a",
+        "name": "id",
+        "comment": "Chave primaria do usuario",
+        "dataType": "INT",
+        "default": "",
+        "options": 11,
+        "ui": {
+          "keys": 1,
+          "widthName": 60,
+          "widthComment": 141,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1779564239682,
+          "createAt": 1779564239682
+        }
+      },
+      "dba8e065-a1b4-4727-93c2-4f17a2507ee7": {
+        "id": "dba8e065-a1b4-4727-93c2-4f17a2507ee7",
+        "tableId": "e8c33e5b-a4e8-42e3-920a-b8a82844de6a",
+        "name": "nome",
+        "comment": "Nome completo do usuario",
+        "dataType": "VARCHAR(255)",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 148,
+          "widthDataType": 81,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1779564239682,
+          "createAt": 1779564239682
+        }
+      },
+      "c956b32d-a081-4e47-834c-764b5a67c5bf": {
+        "id": "c956b32d-a081-4e47-834c-764b5a67c5bf",
+        "tableId": "e8c33e5b-a4e8-42e3-920a-b8a82844de6a",
+        "name": "email",
+        "comment": "Endereco de e-mail institucional do usuario",
+        "dataType": "VARCHAR(255)",
+        "default": "",
+        "options": 12,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 231,
+          "widthDataType": 81,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1779564239682,
+          "createAt": 1779564239682
+        }
+      },
+      "cbb8d806-292c-457a-a8a8-ae38c602dddc": {
+        "id": "cbb8d806-292c-457a-a8a8-ae38c602dddc",
+        "tableId": "e8c33e5b-a4e8-42e3-920a-b8a82844de6a",
+        "name": "rfid_cartao",
+        "comment": "Codigo RFID do cartao fisico do usuario",
+        "dataType": "VARCHAR(24)",
+        "default": "",
+        "options": 12,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 212,
+          "widthDataType": 75,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1779747977834,
+          "createAt": 1779564239682
+        }
+      },
+      "f318c988-facd-46f9-a98f-a216281beb2f": {
+        "id": "f318c988-facd-46f9-a98f-a216281beb2f",
+        "tableId": "e8c33e5b-a4e8-42e3-920a-b8a82844de6a",
+        "name": "data_nascimento",
+        "comment": "Data de nascimento do usuario",
+        "dataType": "DATE",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 91,
+          "widthComment": 167,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1779564239682,
+          "createAt": 1779564239682
+        }
+      },
+      "f37d2ccb-6181-40e5-9f35-aa43aee87330": {
+        "id": "f37d2ccb-6181-40e5-9f35-aa43aee87330",
+        "tableId": "e8c33e5b-a4e8-42e3-920a-b8a82844de6a",
+        "name": "status_ativo",
+        "comment": "Status do usuario",
+        "dataType": "ENUM('Ativo', 'Bloqueado')",
+        "default": "'Ativo'",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 64,
+          "widthComment": 94,
+          "widthDataType": 145,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1779748182771,
+          "createAt": 1779564239682
+        }
+      },
+      "705ba437-429e-49ad-91ec-2fe9fb82798e": {
+        "id": "705ba437-429e-49ad-91ec-2fe9fb82798e",
+        "tableId": "bfd3f76b-2ab6-4752-bd1c-9512a57a4869",
+        "name": "id",
+        "comment": "Chave primaria e estrangeira referenciando usuario",
+        "dataType": "INT",
+        "default": "",
+        "options": 10,
+        "ui": {
+          "keys": 3,
+          "widthName": 60,
+          "widthComment": 272,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1779564239682,
+          "createAt": 1779564239682
+        }
+      },
+      "2150f8e6-0ca8-4541-9838-624bd95b9e25": {
+        "id": "2150f8e6-0ca8-4541-9838-624bd95b9e25",
+        "tableId": "bfd3f76b-2ab6-4752-bd1c-9512a57a4869",
+        "name": "matricula",
+        "comment": "Matricula academica do aluno",
+        "dataType": "VARCHAR(50)",
+        "default": "",
+        "options": 12,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 161,
+          "widthDataType": 75,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1779564239682,
+          "createAt": 1779564239682
+        }
+      },
+      "589aec87-4c2c-4b06-a838-123953cf776d": {
+        "id": "589aec87-4c2c-4b06-a838-123953cf776d",
+        "tableId": "bfd3f76b-2ab6-4752-bd1c-9512a57a4869",
+        "name": "curso",
+        "comment": "Nome do curso de graduacao/pos-graduacao",
+        "dataType": "VARCHAR(100)",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 244,
+          "widthDataType": 81,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1779564239682,
+          "createAt": 1779564239682
+        }
+      },
+      "b1a42f51-e1c8-4eca-a3e5-04957319f944": {
+        "id": "b1a42f51-e1c8-4eca-a3e5-04957319f944",
+        "tableId": "bfd3f76b-2ab6-4752-bd1c-9512a57a4869",
+        "name": "situacao_academica",
+        "comment": "Situacao academica do aluno",
+        "dataType": "ENUM('Ativa', 'Inativa', 'Trancada')",
+        "default": "'Ativa'",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 107,
+          "widthComment": 156,
+          "widthDataType": 180,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1779748205920,
+          "createAt": 1779564239682
+        }
+      },
+      "70ed6380-21f9-4ab7-b24c-ab965c57ee41": {
+        "id": "70ed6380-21f9-4ab7-b24c-ab965c57ee41",
+        "tableId": "eefa57cf-9c11-4f80-b170-9255e6020095",
+        "name": "id",
+        "comment": "Chave primaria e estrangeira referenciando usuario",
+        "dataType": "INT",
+        "default": "",
+        "options": 10,
+        "ui": {
+          "keys": 3,
+          "widthName": 60,
+          "widthComment": 272,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1779564239682,
+          "createAt": 1779564239682
+        }
+      },
+      "3a3ba345-6b25-44b5-baad-07b5b63a4c8d": {
+        "id": "3a3ba345-6b25-44b5-baad-07b5b63a4c8d",
+        "tableId": "eefa57cf-9c11-4f80-b170-9255e6020095",
+        "name": "registro_funcional",
+        "comment": "Registro funcional do docente",
+        "dataType": "VARCHAR(50)",
+        "default": "",
+        "options": 12,
+        "ui": {
+          "keys": 0,
+          "widthName": 96,
+          "widthComment": 161,
+          "widthDataType": 75,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1779741913733,
+          "createAt": 1779564239682
+        }
+      },
+      "75ed566c-7888-4e13-b911-eca0a6446c26": {
+        "id": "75ed566c-7888-4e13-b911-eca0a6446c26",
+        "tableId": "eefa57cf-9c11-4f80-b170-9255e6020095",
+        "name": "departamento",
+        "comment": "Departamento ou filiacao departamental",
+        "dataType": "VARCHAR(100)",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 77,
+          "widthComment": 217,
+          "widthDataType": 81,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1779564239682,
+          "createAt": 1779564239682
+        }
+      },
+      "798fc5d1-bb28-4043-953e-94ce2b21642c": {
+        "id": "798fc5d1-bb28-4043-953e-94ce2b21642c",
+        "tableId": "eefa57cf-9c11-4f80-b170-9255e6020095",
+        "name": "titulacao",
+        "comment": "Grau academico do professor",
+        "dataType": "VARCHAR(50)",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 158,
+          "widthDataType": 75,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1779564239682,
+          "createAt": 1779564239682
+        }
+      },
+      "c421720f-3e37-40df-9251-6930c05d7b64": {
+        "id": "c421720f-3e37-40df-9251-6930c05d7b64",
+        "tableId": "eefa57cf-9c11-4f80-b170-9255e6020095",
+        "name": "regime_trabalho",
+        "comment": "Regime de trabalho do professor",
+        "dataType": "VARCHAR(50)",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 88,
+          "widthComment": 176,
+          "widthDataType": 75,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1779564239682,
+          "createAt": 1779564239682
+        }
+      },
+      "895e3d30-3c74-48ee-a7ca-abdaee9bf155": {
+        "id": "895e3d30-3c74-48ee-a7ca-abdaee9bf155",
+        "tableId": "eefa57cf-9c11-4f80-b170-9255e6020095",
+        "name": "cargo",
+        "comment": "Cargo ocupado pelo professor",
+        "dataType": "VARCHAR(100)",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 163,
+          "widthDataType": 81,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1779564239682,
+          "createAt": 1779564239682
+        }
+      },
+      "f784a13c-d5b7-46ed-b229-09a72c7ea0c9": {
+        "id": "f784a13c-d5b7-46ed-b229-09a72c7ea0c9",
+        "tableId": "eefa57cf-9c11-4f80-b170-9255e6020095",
+        "name": "atribuicoes",
+        "comment": "Atribuicoes do docente no departamento",
+        "dataType": "TEXT",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 221,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1779564239682,
+          "createAt": 1779564239682
+        }
+      },
+      "col-tipo-obra-id": {
+        "id": "col-tipo-obra-id",
+        "tableId": "tb-tipo-obra-001",
+        "name": "id",
+        "comment": "Chave primaria do tipo de obra",
+        "dataType": "INT",
+        "default": "",
+        "options": 11,
+        "ui": {
+          "keys": 1,
+          "widthName": 60,
+          "widthComment": 167,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1779800000001,
+          "createAt": 1779800000001
+        }
+      },
+      "col-tipo-obra-descricao": {
+        "id": "col-tipo-obra-descricao",
+        "tableId": "tb-tipo-obra-001",
+        "name": "descricao",
+        "comment": "Descricao do tipo (ex: Livro, Tese, Dissertacao, Periodico)",
+        "dataType": "VARCHAR(50)",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 299,
+          "widthDataType": 75,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1779800000001,
+          "createAt": 1779800000001
+        }
+      },
+      "col-area-id": {
+        "id": "col-area-id",
+        "tableId": "tb-area-conhecimento-001",
+        "name": "id",
+        "comment": "Chave primaria da area do conhecimento",
+        "dataType": "INT",
+        "default": "",
+        "options": 11,
+        "ui": {
+          "keys": 1,
+          "widthName": 60,
+          "widthComment": 220,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1779800000002,
+          "createAt": 1779800000002
+        }
+      },
+      "col-area-descricao": {
+        "id": "col-area-descricao",
+        "tableId": "tb-area-conhecimento-001",
+        "name": "descricao",
+        "comment": "Nome da area (ex: Banco de Dados, Saude, Psicologia, Direito)",
+        "dataType": "VARCHAR(100)",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 331,
+          "widthDataType": 81,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1779800000002,
+          "createAt": 1779800000002
+        }
+      },
+      "col-autor-id": {
+        "id": "col-autor-id",
+        "tableId": "tb-autor-001",
+        "name": "id",
+        "comment": "Chave primaria do autor",
+        "dataType": "INT",
+        "default": "",
+        "options": 11,
+        "ui": {
+          "keys": 1,
+          "widthName": 60,
+          "widthComment": 130,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1779800000003,
+          "createAt": 1779800000003
+        }
+      },
+      "col-autor-nome": {
+        "id": "col-autor-nome",
+        "tableId": "tb-autor-001",
+        "name": "nome",
+        "comment": "Nome completo do autor",
+        "dataType": "VARCHAR(255)",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 137,
+          "widthDataType": 81,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1779800000003,
+          "createAt": 1779800000003
+        }
+      },
+      "col-autor-lattes": {
+        "id": "col-autor-lattes",
+        "tableId": "tb-autor-001",
+        "name": "link_lattes",
+        "comment": "URL do curriculo Lattes do autor (opcional)",
+        "dataType": "VARCHAR(255)",
+        "default": "",
+        "options": 4,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 229,
+          "widthDataType": 81,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1779800000003,
+          "createAt": 1779800000003
+        }
+      },
+      "col-obra-autor-obra-id": {
+        "id": "col-obra-autor-obra-id",
+        "tableId": "tb-obra-autor-001",
+        "name": "obra_id",
+        "comment": "FK para obra",
+        "dataType": "INT",
+        "default": "",
+        "options": 10,
+        "ui": {
+          "keys": 3,
+          "widthName": 60,
+          "widthComment": 69,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1779800000004,
+          "createAt": 1779800000004
+        }
+      },
+      "col-obra-autor-autor-id": {
+        "id": "col-obra-autor-autor-id",
+        "tableId": "tb-obra-autor-001",
+        "name": "autor_id",
+        "comment": "FK para autor",
+        "dataType": "INT",
+        "default": "",
+        "options": 10,
+        "ui": {
+          "keys": 3,
+          "widthName": 60,
+          "widthComment": 73,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1779800000004,
+          "createAt": 1779800000004
+        }
+      },
+      "col-obra-autor-ordem": {
+        "id": "col-obra-autor-ordem",
+        "tableId": "tb-obra-autor-001",
+        "name": "ordem",
+        "comment": "Ordem de autoria (1=principal)",
+        "dataType": "TINYINT",
+        "default": "1",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 167,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1779800000004,
+          "createAt": 1779800000004
+        }
+      },
+      "col-obra-tipo-id": {
+        "id": "col-obra-tipo-id",
+        "tableId": "77887b44-bfba-497f-87a3-31c795ed4cfd",
+        "name": "tipo_obra_id",
+        "comment": "FK para tipo_obra",
+        "dataType": "INT",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 2,
+          "widthName": 67,
+          "widthComment": 95,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1779800000010,
+          "createAt": 1779800000010
+        }
+      },
+      "col-obra-area-id": {
+        "id": "col-obra-area-id",
+        "tableId": "77887b44-bfba-497f-87a3-31c795ed4cfd",
+        "name": "area_conhecimento_id",
+        "comment": "FK para area_conhecimento",
+        "dataType": "INT",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 2,
+          "widthName": 120,
+          "widthComment": 148,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1779800000010,
+          "createAt": 1779800000010
+        }
+      },
+      "45b5fa59-9be8-42c3-ab8b-92da23478ae9": {
+        "id": "45b5fa59-9be8-42c3-ab8b-92da23478ae9",
+        "tableId": "77887b44-bfba-497f-87a3-31c795ed4cfd",
+        "name": "id",
+        "comment": "Chave primaria da obra",
+        "dataType": "INT",
+        "default": "",
+        "options": 11,
+        "ui": {
+          "keys": 1,
+          "widthName": 60,
+          "widthComment": 126,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1779564239682,
+          "createAt": 1779564239682
+        }
+      },
+      "99c6194b-e1a0-4e2c-8b40-eb0b5ec88537": {
+        "id": "99c6194b-e1a0-4e2c-8b40-eb0b5ec88537",
+        "tableId": "77887b44-bfba-497f-87a3-31c795ed4cfd",
+        "name": "titulo",
+        "comment": "Titulo da obra",
+        "dataType": "VARCHAR(255)",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 76,
+          "widthDataType": 81,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1779564239682,
+          "createAt": 1779564239682
+        }
+      },
+      "e93a267d-568f-49cb-8fdb-361e13c7bb71": {
+        "id": "e93a267d-568f-49cb-8fdb-361e13c7bb71",
+        "tableId": "77887b44-bfba-497f-87a3-31c795ed4cfd",
+        "name": "isbn",
+        "comment": "Codigo ISBN (opcional para teses/periodicos)",
+        "dataType": "VARCHAR(20)",
+        "default": "",
+        "options": 4,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 242,
+          "widthDataType": 75,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1779564239682,
+          "createAt": 1779564239682
+        }
+      },
+      "f3d96ef8-5e50-4885-ae95-f4daf5bb90fe": {
+        "id": "f3d96ef8-5e50-4885-ae95-f4daf5bb90fe",
+        "tableId": "77887b44-bfba-497f-87a3-31c795ed4cfd",
+        "name": "subtitulo",
+        "comment": "Subtitulo da obra (opcional)",
+        "dataType": "VARCHAR(255)",
+        "default": "",
+        "options": 4,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 150,
+          "widthDataType": 81,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1779800000010,
+          "createAt": 1779564239682
+        }
+      },
+      "d797e8eb-44d5-4611-bf52-239e05e81395": {
+        "id": "d797e8eb-44d5-4611-bf52-239e05e81395",
+        "tableId": "77887b44-bfba-497f-87a3-31c795ed4cfd",
+        "name": "categoria",
+        "comment": "Categoria ou assunto da obra",
+        "dataType": "VARCHAR(100)",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 159,
+          "widthDataType": 81,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1779564239682,
+          "createAt": 1779564239682
+        }
+      },
+      "eqVz0JuCR7sIQxYx7-Ffr": {
+        "id": "eqVz0JuCR7sIQxYx7-Ffr",
+        "tableId": "77887b44-bfba-497f-87a3-31c795ed4cfd",
+        "name": "numero_paginas",
+        "comment": "Quantidade de paginas da obra",
+        "dataType": "INT",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 89,
+          "widthComment": 169,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1779741625773,
+          "createAt": 1779741574948
+        }
+      },
+      "e1edf898-1cc1-4b42-ac58-a852a3c6e8d0": {
+        "id": "e1edf898-1cc1-4b42-ac58-a852a3c6e8d0",
+        "tableId": "77887b44-bfba-497f-87a3-31c795ed4cfd",
+        "name": "data_publicacao",
+        "comment": "Data de publicacao",
+        "dataType": "DATE",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 87,
+          "widthComment": 104,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1779564239682,
+          "createAt": 1779564239682
+        }
+      },
+      "2d542125-2fa7-4724-abf7-3ae5c05c213d": {
+        "id": "2d542125-2fa7-4724-abf7-3ae5c05c213d",
+        "tableId": "d37f0d37-cc4a-4171-942c-4a3ba3b49f43",
+        "name": "id",
+        "comment": "Chave primaria do exemplar",
+        "dataType": "INT",
+        "default": "",
+        "options": 11,
+        "ui": {
+          "keys": 1,
+          "widthName": 60,
+          "widthComment": 151,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1779564239682,
+          "createAt": 1779564239682
+        }
+      },
+      "ce71eeba-618a-4f99-afa4-6f5b97d29db4": {
+        "id": "ce71eeba-618a-4f99-afa4-6f5b97d29db4",
+        "tableId": "d37f0d37-cc4a-4171-942c-4a3ba3b49f43",
+        "name": "obra_id",
+        "comment": "Chave estrangeira apontando para a obra",
+        "dataType": "INT",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 2,
+          "widthName": 60,
+          "widthComment": 222,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1779564239682,
+          "createAt": 1779564239682
+        }
+      },
+      "794a4494-39ed-4618-99e3-ab6a68095209": {
+        "id": "794a4494-39ed-4618-99e3-ab6a68095209",
+        "tableId": "d37f0d37-cc4a-4171-942c-4a3ba3b49f43",
+        "name": "codigo_rfid",
+        "comment": "Etiqueta RFID unica associada a este exemplar fisico",
+        "dataType": "VARCHAR(24)",
+        "default": "",
+        "options": 12,
+        "ui": {
+          "keys": 0,
+          "widthName": 62,
+          "widthComment": 276,
+          "widthDataType": 75,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1779749733460,
+          "createAt": 1779564239682
+        }
+      },
+      "725936e1-244e-4c04-8c88-ff714c18683c": {
+        "id": "725936e1-244e-4c04-8c88-ff714c18683c",
+        "tableId": "d37f0d37-cc4a-4171-942c-4a3ba3b49f43",
+        "name": "status",
+        "comment": "Status de disponibilidade do exemplar",
+        "dataType": "ENUM('Disponivel', 'Emprestado', 'Consulta Local', 'Manutencao', 'Extraviado', 'Descartado')",
+        "default": "'Disponivel'",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 204,
+          "widthDataType": 482,
+          "widthDefault": 63
+        },
+        "meta": {
+          "updateAt": 1779749171436,
+          "createAt": 1779564239682
+        }
+      },
+      "s5V07pTWDFH0wxYwyq3qr": {
+        "id": "s5V07pTWDFH0wxYwyq3qr",
+        "tableId": "d37f0d37-cc4a-4171-942c-4a3ba3b49f43",
+        "name": "estado_conservacao",
+        "comment": "Estado em que se encontra o exemplar",
+        "dataType": "ENUM('Novo', 'Bom', 'Regular', 'Danificado')",
+        "default": "'Novo'",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 108,
+          "widthComment": 208,
+          "widthDataType": 233,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1779748721115,
+          "createAt": 1779741652788
+        }
+      },
+      "col-exemplar-data-aquisicao": {
+        "id": "col-exemplar-data-aquisicao",
+        "tableId": "d37f0d37-cc4a-4171-942c-4a3ba3b49f43",
+        "name": "data_aquisicao",
+        "comment": "Data em que o exemplar foi adquirido pela biblioteca",
+        "dataType": "DATE",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 80,
+          "widthComment": 284,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1779800000011,
+          "createAt": 1779800000011
+        }
+      },
+      "b5affa2e-829f-435c-9a87-8366d44f84fb": {
+        "id": "b5affa2e-829f-435c-9a87-8366d44f84fb",
+        "tableId": "322c4d23-a001-4e26-b872-20e77a52763c",
+        "name": "id",
+        "comment": "Chave primaria do telefone",
+        "dataType": "INT",
+        "default": "",
+        "options": 11,
+        "ui": {
+          "keys": 1,
+          "widthName": 60,
+          "widthComment": 145,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1779564239682,
+          "createAt": 1779564239682
+        }
+      },
+      "6ae983c4-5824-4fc8-b5bb-9421be8b4b24": {
+        "id": "6ae983c4-5824-4fc8-b5bb-9421be8b4b24",
+        "tableId": "322c4d23-a001-4e26-b872-20e77a52763c",
+        "name": "usuario_id",
+        "comment": "Chave estrangeira referenciando usuario",
+        "dataType": "INT",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 2,
+          "widthName": 60,
+          "widthComment": 215,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1779564239682,
+          "createAt": 1779564239682
+        }
+      },
+      "ed85d390-91a2-4b7b-89ba-f615532fc166": {
+        "id": "ed85d390-91a2-4b7b-89ba-f615532fc166",
+        "tableId": "322c4d23-a001-4e26-b872-20e77a52763c",
+        "name": "numero",
+        "comment": "Numero de telefone com DDD",
+        "dataType": "VARCHAR(20)",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 164,
+          "widthDataType": 75,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1779564239682,
+          "createAt": 1779564239682
+        }
+      },
+      "4c7b07b3-af4a-4783-bf78-73447c2c4673": {
+        "id": "4c7b07b3-af4a-4783-bf78-73447c2c4673",
+        "tableId": "322c4d23-a001-4e26-b872-20e77a52763c",
+        "name": "tipo",
+        "comment": "Tipo do telefone",
+        "dataType": "ENUM('Celular', 'Residencial', 'Comercial')",
+        "default": "'Celular'",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 89,
+          "widthDataType": 220,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1779800000020,
+          "createAt": 1779564239682
+        }
+      },
+      "36e0419d-af03-4619-a482-8ab5b8d5ff9f": {
+        "id": "36e0419d-af03-4619-a482-8ab5b8d5ff9f",
+        "tableId": "fa1587b8-2958-4f78-9eb4-7711eed31d84",
+        "name": "id",
+        "comment": "Chave primaria do endereco",
+        "dataType": "INT",
+        "default": "",
+        "options": 11,
+        "ui": {
+          "keys": 1,
+          "widthName": 60,
+          "widthComment": 151,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1779564239682,
+          "createAt": 1779564239682
+        }
+      },
+      "0dc0102d-1fa7-4f6a-bb65-0b249bd4b51b": {
+        "id": "0dc0102d-1fa7-4f6a-bb65-0b249bd4b51b",
+        "tableId": "fa1587b8-2958-4f78-9eb4-7711eed31d84",
+        "name": "usuario_id",
+        "comment": "Chave estrangeira referenciando usuario",
+        "dataType": "INT",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 2,
+          "widthName": 60,
+          "widthComment": 215,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1779564239682,
+          "createAt": 1779564239682
+        }
+      },
+      "4b8f1bb6-8f0a-44ed-87f0-636d386f1445": {
+        "id": "4b8f1bb6-8f0a-44ed-87f0-636d386f1445",
+        "tableId": "fa1587b8-2958-4f78-9eb4-7711eed31d84",
+        "name": "logradouro",
+        "comment": "Rua, Avenida, etc.",
+        "dataType": "VARCHAR(255)",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 61,
+          "widthComment": 95,
+          "widthDataType": 81,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1779564239682,
+          "createAt": 1779564239682
+        }
+      },
+      "7f606aba-1089-4b33-b5f1-762a4c6a94ed": {
+        "id": "7f606aba-1089-4b33-b5f1-762a4c6a94ed",
+        "tableId": "fa1587b8-2958-4f78-9eb4-7711eed31d84",
+        "name": "numero",
+        "comment": "Numero",
+        "dataType": "VARCHAR(20)",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 75,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1779564239682,
+          "createAt": 1779564239682
+        }
+      },
+      "8ad37453-dbdb-4fa1-ba5f-a66f5f42e418": {
+        "id": "8ad37453-dbdb-4fa1-ba5f-a66f5f42e418",
+        "tableId": "fa1587b8-2958-4f78-9eb4-7711eed31d84",
+        "name": "complemento",
+        "comment": "Complemento (ex: Apto 101)",
+        "dataType": "VARCHAR(100)",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 76,
+          "widthComment": 154,
+          "widthDataType": 81,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1779564239682,
+          "createAt": 1779564239682
+        }
+      },
+      "21ed6231-ecea-4987-a90a-baee585ca47e": {
+        "id": "21ed6231-ecea-4987-a90a-baee585ca47e",
+        "tableId": "fa1587b8-2958-4f78-9eb4-7711eed31d84",
+        "name": "bairro",
+        "comment": "Bairro",
+        "dataType": "VARCHAR(100)",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 81,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1779564239682,
+          "createAt": 1779564239682
+        }
+      },
+      "751c26a7-f8d8-4f57-8944-d408d8d64b90": {
+        "id": "751c26a7-f8d8-4f57-8944-d408d8d64b90",
+        "tableId": "fa1587b8-2958-4f78-9eb4-7711eed31d84",
+        "name": "cidade",
+        "comment": "Cidade",
+        "dataType": "VARCHAR(100)",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 81,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1779564239682,
+          "createAt": 1779564239682
+        }
+      },
+      "0c53eb3e-35a6-4b25-8e07-79f28b2d1119": {
+        "id": "0c53eb3e-35a6-4b25-8e07-79f28b2d1119",
+        "tableId": "fa1587b8-2958-4f78-9eb4-7711eed31d84",
+        "name": "estado",
+        "comment": "Unidade federativa (ex: RJ, SP)",
+        "dataType": "CHAR(2)",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 161,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1779564239682,
+          "createAt": 1779564239682
+        }
+      },
+      "52195446-74c6-4a3e-8f65-981871abd055": {
+        "id": "52195446-74c6-4a3e-8f65-981871abd055",
+        "tableId": "fa1587b8-2958-4f78-9eb4-7711eed31d84",
+        "name": "cep",
+        "comment": "CEP",
+        "dataType": "VARCHAR(10)",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 75,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1779564239682,
+          "createAt": 1779564239682
+        }
+      },
+      "71d2ab0c-9442-4b1f-8c3d-bd074728a5b6": {
+        "id": "71d2ab0c-9442-4b1f-8c3d-bd074728a5b6",
+        "tableId": "e2e61e9f-d7de-44a2-8f99-f6219827fd72",
+        "name": "id",
+        "comment": "Chave primaria do emprestimo",
+        "dataType": "INT",
+        "default": "",
+        "options": 11,
+        "ui": {
+          "keys": 1,
+          "widthName": 60,
+          "widthComment": 166,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1779564239682,
+          "createAt": 1779564239682
+        }
+      },
+      "32e9640c-9ae1-4ff0-b090-740d824b6d1c": {
+        "id": "32e9640c-9ae1-4ff0-b090-740d824b6d1c",
+        "tableId": "e2e61e9f-d7de-44a2-8f99-f6219827fd72",
+        "name": "usuario_id",
+        "comment": "Chave estrangeira referenciando o usuario",
+        "dataType": "INT",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 2,
+          "widthName": 60,
+          "widthComment": 226,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1779564239682,
+          "createAt": 1779564239682
+        }
+      },
+      "a0ef32fc-e8e8-434b-826e-d0eb9bb0124e": {
+        "id": "a0ef32fc-e8e8-434b-826e-d0eb9bb0124e",
+        "tableId": "e2e61e9f-d7de-44a2-8f99-f6219827fd72",
+        "name": "exemplar_id",
+        "comment": "Chave estrangeira referenciando o exemplar fisico",
+        "dataType": "INT",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 2,
+          "widthName": 66,
+          "widthComment": 266,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1779564239682,
+          "createAt": 1779564239682
+        }
+      },
+      "dfa3c03c-cf2f-4def-8bb9-9fbea49e7bd6": {
+        "id": "dfa3c03c-cf2f-4def-8bb9-9fbea49e7bd6",
+        "tableId": "e2e61e9f-d7de-44a2-8f99-f6219827fd72",
+        "name": "data_emprestimo",
+        "comment": "Data/hora em que o emprestimo foi realizado",
+        "dataType": "TIMESTAMP",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 94,
+          "widthComment": 244,
+          "widthDataType": 65,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1779564239682,
+          "createAt": 1779564239682
+        }
+      },
+      "dde06e13-d028-4ae5-aabe-d269f6fe99de": {
+        "id": "dde06e13-d028-4ae5-aabe-d269f6fe99de",
+        "tableId": "e2e61e9f-d7de-44a2-8f99-f6219827fd72",
+        "name": "data_previsao_devolucao",
+        "comment": "Data limite prevista para entrega sem multa",
+        "dataType": "TIMESTAMP",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 134,
+          "widthComment": 233,
+          "widthDataType": 65,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1779564239682,
+          "createAt": 1779564239682
+        }
+      },
+      "7e637d45-2705-417f-a0b0-a3796d091cf5": {
+        "id": "7e637d45-2705-417f-a0b0-a3796d091cf5",
+        "tableId": "e2e61e9f-d7de-44a2-8f99-f6219827fd72",
+        "name": "data_devolucao_real",
+        "comment": "Data real em que o livro foi retornado (NULL=ainda ativo)",
+        "dataType": "TIMESTAMP",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 109,
+          "widthComment": 307,
+          "widthDataType": 65,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1779564239682,
+          "createAt": 1779564239682
+        }
+      },
+      "col-emprestimo-valor-dia-multa": {
+        "id": "col-emprestimo-valor-dia-multa",
+        "tableId": "e2e61e9f-d7de-44a2-8f99-f6219827fd72",
+        "name": "valor_dia_multa",
+        "comment": "Taxa diaria de multa vigente no momento do emprestimo (auditoria)",
+        "dataType": "DECIMAL(5,2)",
+        "default": "1.50",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 84,
+          "widthComment": 364,
+          "widthDataType": 74,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1780335571473,
+          "createAt": 1779800000012
+        }
+      },
+      "5357b443-2c44-441a-a931-ce0938cd7465": {
+        "id": "5357b443-2c44-441a-a931-ce0938cd7465",
+        "tableId": "4b612336-c20d-426e-ab83-481cb5a8af58",
+        "name": "id",
+        "comment": "Chave primaria da multa",
+        "dataType": "INT",
+        "default": "",
+        "options": 11,
+        "ui": {
+          "keys": 1,
+          "widthName": 60,
+          "widthComment": 131,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1779564239682,
+          "createAt": 1779564239682
+        }
+      },
+      "634798da-0628-4d73-8683-077fd1cf48e6": {
+        "id": "634798da-0628-4d73-8683-077fd1cf48e6",
+        "tableId": "4b612336-c20d-426e-ab83-481cb5a8af58",
+        "name": "emprestimo_id",
+        "comment": "FK para emprestimo (UNIQUE — 1:1)",
+        "dataType": "INT",
+        "default": "",
+        "options": 12,
+        "ui": {
+          "keys": 2,
+          "widthName": 80,
+          "widthComment": 197,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1779564239682,
+          "createAt": 1779564239682
+        }
+      },
+      "779ae1a3-d890-48f3-93ac-103cad7473f7": {
+        "id": "779ae1a3-d890-48f3-93ac-103cad7473f7",
+        "tableId": "4b612336-c20d-426e-ab83-481cb5a8af58",
+        "name": "valor_multa",
+        "comment": "Valor bruto calculado da multa",
+        "dataType": "DECIMAL(10,2)",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 63,
+          "widthComment": 164,
+          "widthDataType": 81,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1779564239682,
+          "createAt": 1779564239682
+        }
+      },
+      "a0acec97-b7b9-4e2c-9356-e93f1dec129f": {
+        "id": "a0acec97-b7b9-4e2c-9356-e93f1dec129f",
+        "tableId": "4b612336-c20d-426e-ab83-481cb5a8af58",
+        "name": "desconto",
+        "comment": "Valor de desconto concedido",
+        "dataType": "DECIMAL(10,2)",
+        "default": "0.00",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 156,
+          "widthDataType": 81,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1779564239682,
+          "createAt": 1779564239682
+        }
+      },
+      "e06a3148-4eaa-415e-80e8-1f2466dfee4d": {
+        "id": "e06a3148-4eaa-415e-80e8-1f2466dfee4d",
+        "tableId": "4b612336-c20d-426e-ab83-481cb5a8af58",
+        "name": "valor_pago",
+        "comment": "Valor pago efetivamente",
+        "dataType": "DECIMAL(10,2)",
+        "default": "0.00",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 131,
+          "widthDataType": 81,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1779564239682,
+          "createAt": 1779564239682
+        }
+      },
+      "6813dd79-e106-430d-a7fb-cb7c08e86117": {
+        "id": "6813dd79-e106-430d-a7fb-cb7c08e86117",
+        "tableId": "4b612336-c20d-426e-ab83-481cb5a8af58",
+        "name": "data_pagamento",
+        "comment": "Data de pagamento da multa",
+        "dataType": "TIMESTAMP",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 91,
+          "widthComment": 157,
+          "widthDataType": 65,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1779564239682,
+          "createAt": 1779564239682
+        }
+      },
+      "c40c158f-2102-4a33-9597-0ec39ea25c62": {
+        "id": "c40c158f-2102-4a33-9597-0ec39ea25c62",
+        "tableId": "4b612336-c20d-426e-ab83-481cb5a8af58",
+        "name": "status_pagamento",
+        "comment": "Status de pagamento da multa",
+        "dataType": "ENUM('Pendente', 'Pago', 'Cancelado')",
+        "default": "'Pendente'",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 99,
+          "widthComment": 165,
+          "widthDataType": 203,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1779800000013,
+          "createAt": 1779564239682
+        }
+      },
+      "1fc2c4c3-5d20-4875-b762-fea90d9c210f": {
+        "id": "1fc2c4c3-5d20-4875-b762-fea90d9c210f",
+        "tableId": "f86d55fd-5905-4bf1-8789-e9de6741f035",
+        "name": "id",
+        "comment": "Chave primaria do log de acesso",
+        "dataType": "INT",
+        "default": "",
+        "options": 11,
+        "ui": {
+          "keys": 1,
+          "widthName": 60,
+          "widthComment": 174,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1779564239682,
+          "createAt": 1779564239682
+        }
+      },
+      "90a9750d-34c8-4c15-a52f-5581a678b740": {
+        "id": "90a9750d-34c8-4c15-a52f-5581a678b740",
+        "tableId": "f86d55fd-5905-4bf1-8789-e9de6741f035",
+        "name": "usuario_id",
+        "comment": "Chave estrangeira do usuario",
+        "dataType": "INT",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 2,
+          "widthName": 60,
+          "widthComment": 156,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1779564239682,
+          "createAt": 1779564239682
+        }
+      },
+      "05c6a222-0a6f-498b-84a9-c1b38d3993f1": {
+        "id": "05c6a222-0a6f-498b-84a9-c1b38d3993f1",
+        "tableId": "f86d55fd-5905-4bf1-8789-e9de6741f035",
+        "name": "data_hora",
+        "comment": "Data/hora do acesso fisico",
+        "dataType": "TIMESTAMP",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 142,
+          "widthDataType": 65,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1779564239682,
+          "createAt": 1779564239682
+        }
+      },
+      "8595233a-d82a-4859-8641-2ffb711c9f0d": {
+        "id": "8595233a-d82a-4859-8641-2ffb711c9f0d",
+        "tableId": "f86d55fd-5905-4bf1-8789-e9de6741f035",
+        "name": "tipo_acesso",
+        "comment": "Sentido de acesso: Entrada ou Saida",
+        "dataType": "ENUM('Entrada', 'Saida')",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 63,
+          "widthComment": 193,
+          "widthDataType": 129,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1779800000014,
+          "createAt": 1779564239682
+        }
+      }
+    },
+    "relationshipEntities": {
+      "c45fc320-e301-4896-984b-f6b1976063af": {
+        "id": "c45fc320-e301-4896-984b-f6b1976063af",
+        "identification": true,
+        "relationshipType": 2,
+        "startRelationshipType": 2,
+        "start": {
+          "tableId": "e8c33e5b-a4e8-42e3-920a-b8a82844de6a",
+          "columnIds": [
+            "6454e920-c13b-4d66-992d-327822fb9790"
+          ],
+          "x": 2850.252,
+          "y": 2740.8138,
+          "direction": 2
+        },
+        "end": {
+          "tableId": "bfd3f76b-2ab6-4752-bd1c-9512a57a4869",
+          "columnIds": [
+            "705ba437-429e-49ad-91ec-2fe9fb82798e"
+          ],
+          "x": 3160.2494,
+          "y": 2740.2123,
+          "direction": 1
+        },
+        "meta": {
+          "updateAt": 1779564239682,
+          "createAt": 1779564239682
+        }
+      },
+      "0741b0d5-8f45-48cf-8dc4-de0d74595b47": {
+        "id": "0741b0d5-8f45-48cf-8dc4-de0d74595b47",
+        "identification": true,
+        "relationshipType": 2,
+        "startRelationshipType": 2,
+        "start": {
+          "tableId": "e8c33e5b-a4e8-42e3-920a-b8a82844de6a",
+          "columnIds": [
+            "6454e920-c13b-4d66-992d-327822fb9790"
+          ],
+          "x": 2198.252,
+          "y": 2740.8138,
+          "direction": 1
+        },
+        "end": {
+          "tableId": "eefa57cf-9c11-4f80-b170-9255e6020095",
+          "columnIds": [
+            "70ed6380-21f9-4ab7-b24c-ab965c57ee41"
+          ],
+          "x": 2021.2166,
+          "y": 2740.4433,
+          "direction": 2
+        },
+        "meta": {
+          "updateAt": 1779564239682,
+          "createAt": 1779564239682
+        }
+      },
+      "e3fa0430-fe52-4974-bf0d-50d84e5de419": {
+        "id": "e3fa0430-fe52-4974-bf0d-50d84e5de419",
+        "identification": false,
+        "relationshipType": 4,
+        "startRelationshipType": 2,
+        "start": {
+          "tableId": "77887b44-bfba-497f-87a3-31c795ed4cfd",
+          "columnIds": [
+            "45b5fa59-9be8-42c3-ab8b-92da23478ae9"
+          ],
+          "x": 789.7827,
+          "y": 3975.0524,
+          "direction": 4
+        },
+        "end": {
+          "tableId": "d37f0d37-cc4a-4171-942c-4a3ba3b49f43",
+          "columnIds": [
+            "ce71eeba-618a-4f99-afa4-6f5b97d29db4"
+          ],
+          "x": 789.2844,
+          "y": 3489.6854,
+          "direction": 8
+        },
+        "meta": {
+          "updateAt": 1779564239682,
+          "createAt": 1779564239682
+        }
+      },
+      "c0b9d1cd-28dc-4d39-a656-c84b371a1f0f": {
+        "id": "c0b9d1cd-28dc-4d39-a656-c84b371a1f0f",
+        "identification": false,
+        "relationshipType": 4,
+        "startRelationshipType": 2,
+        "start": {
+          "tableId": "e8c33e5b-a4e8-42e3-920a-b8a82844de6a",
+          "columnIds": [
+            "6454e920-c13b-4d66-992d-327822fb9790"
+          ],
+          "x": 2850.252,
+          "y": 2640.8138,
+          "direction": 2
+        },
+        "end": {
+          "tableId": "322c4d23-a001-4e26-b872-20e77a52763c",
+          "columnIds": [
+            "6ae983c4-5824-4fc8-b5bb-9421be8b4b24"
+          ],
+          "x": 2948.6288,
+          "y": 2316.2101,
+          "direction": 1
+        },
+        "meta": {
+          "updateAt": 1779564239682,
+          "createAt": 1779564239682
+        }
+      },
+      "7def7094-9985-4c21-bb69-5c27b47cf2db": {
+        "id": "7def7094-9985-4c21-bb69-5c27b47cf2db",
+        "identification": false,
+        "relationshipType": 4,
+        "startRelationshipType": 2,
+        "start": {
+          "tableId": "e8c33e5b-a4e8-42e3-920a-b8a82844de6a",
+          "columnIds": [
+            "6454e920-c13b-4d66-992d-327822fb9790"
+          ],
+          "x": 2524.252,
+          "y": 2590.8138,
+          "direction": 4
+        },
+        "end": {
+          "tableId": "fa1587b8-2958-4f78-9eb4-7711eed31d84",
+          "columnIds": [
+            "0dc0102d-1fa7-4f6a-bb65-0b249bd4b51b"
+          ],
+          "x": 2525.7736,
+          "y": 2138.2806,
+          "direction": 8
+        },
+        "meta": {
+          "updateAt": 1779564239682,
+          "createAt": 1779564239682
+        }
+      },
+      "7010903c-7eb5-49e8-a1d5-868ff077d7b7": {
+        "id": "7010903c-7eb5-49e8-a1d5-868ff077d7b7",
+        "identification": false,
+        "relationshipType": 4,
+        "startRelationshipType": 2,
+        "start": {
+          "tableId": "e8c33e5b-a4e8-42e3-920a-b8a82844de6a",
+          "columnIds": [
+            "6454e920-c13b-4d66-992d-327822fb9790"
+          ],
+          "x": 2524.252,
+          "y": 2790.8138,
+          "direction": 8
+        },
+        "end": {
+          "tableId": "e2e61e9f-d7de-44a2-8f99-f6219827fd72",
+          "columnIds": [
+            "32e9640c-9ae1-4ff0-b090-740d824b6d1c"
+          ],
+          "x": 2522.5729,
+          "y": 3279.1771,
+          "direction": 4
+        },
+        "meta": {
+          "updateAt": 1779564239682,
+          "createAt": 1779564239682
+        }
+      },
+      "2e062365-4fad-4343-8342-cd92436a5791": {
+        "id": "2e062365-4fad-4343-8342-cd92436a5791",
+        "identification": false,
+        "relationshipType": 4,
+        "startRelationshipType": 2,
+        "start": {
+          "tableId": "d37f0d37-cc4a-4171-942c-4a3ba3b49f43",
+          "columnIds": [
+            "2d542125-2fa7-4724-abf7-3ae5c05c213d"
+          ],
+          "x": 1320.2844,
+          "y": 3389.6854,
+          "direction": 2
+        },
+        "end": {
+          "tableId": "e2e61e9f-d7de-44a2-8f99-f6219827fd72",
+          "columnIds": [
+            "a0ef32fc-e8e8-434b-826e-d0eb9bb0124e"
+          ],
+          "x": 2144.0729,
+          "y": 3391.1771,
+          "direction": 1
+        },
+        "meta": {
+          "updateAt": 1779564239682,
+          "createAt": 1779564239682
+        }
+      },
+      "9879dc35-0b3e-48d2-81a7-9d56b6aaced4": {
+        "id": "9879dc35-0b3e-48d2-81a7-9d56b6aaced4",
+        "identification": false,
+        "relationshipType": 2,
+        "startRelationshipType": 2,
+        "start": {
+          "tableId": "e2e61e9f-d7de-44a2-8f99-f6219827fd72",
+          "columnIds": [
+            "71d2ab0c-9442-4b1f-8c3d-bd074728a5b6"
+          ],
+          "x": 2901.0729,
+          "y": 3391.1771,
+          "direction": 2
+        },
+        "end": {
+          "tableId": "4b612336-c20d-426e-ab83-481cb5a8af58",
+          "columnIds": [
+            "634798da-0628-4d73-8683-077fd1cf48e6"
+          ],
+          "x": 3321.513,
+          "y": 3389.8899,
+          "direction": 1
+        },
+        "meta": {
+          "updateAt": 1779564239682,
+          "createAt": 1779564239682
+        }
+      },
+      "18437002-a9c5-44cd-b12f-6b98617b866c": {
+        "id": "18437002-a9c5-44cd-b12f-6b98617b866c",
+        "identification": false,
+        "relationshipType": 4,
+        "startRelationshipType": 2,
+        "start": {
+          "tableId": "e8c33e5b-a4e8-42e3-920a-b8a82844de6a",
+          "columnIds": [
+            "6454e920-c13b-4d66-992d-327822fb9790"
+          ],
+          "x": 2198.252,
+          "y": 2640.8138,
+          "direction": 1
+        },
+        "end": {
+          "tableId": "f86d55fd-5905-4bf1-8789-e9de6741f035",
+          "columnIds": [
+            "90a9750d-34c8-4c15-a52f-5581a678b740"
+          ],
+          "x": 2098.2433,
+          "y": 2310.6924,
+          "direction": 2
+        },
+        "meta": {
+          "updateAt": 1779564239682,
+          "createAt": 1779564239682
+        }
+      },
+      "rel-tipo-obra-obra-001": {
+        "id": "rel-tipo-obra-obra-001",
+        "identification": false,
+        "relationshipType": 4,
+        "startRelationshipType": 2,
+        "start": {
+          "tableId": "tb-tipo-obra-001",
+          "columnIds": [
+            "col-tipo-obra-id"
+          ],
+          "x": 1426.4706,
+          "y": 4043.1764,
+          "direction": 1
+        },
+        "end": {
+          "tableId": "77887b44-bfba-497f-87a3-31c795ed4cfd",
+          "columnIds": [
+            "col-obra-tipo-id"
+          ],
+          "x": 1103.7827,
+          "y": 4043.0524,
+          "direction": 2
+        },
+        "meta": {
+          "updateAt": 1779800000001,
+          "createAt": 1779800000001
+        }
+      },
+      "rel-area-conhecimento-obra-001": {
+        "id": "rel-area-conhecimento-obra-001",
+        "identification": false,
+        "relationshipType": 4,
+        "startRelationshipType": 2,
+        "start": {
+          "tableId": "tb-area-conhecimento-001",
+          "columnIds": [
+            "col-area-id"
+          ],
+          "x": 1425.6302,
+          "y": 4176.79,
+          "direction": 1
+        },
+        "end": {
+          "tableId": "77887b44-bfba-497f-87a3-31c795ed4cfd",
+          "columnIds": [
+            "col-obra-area-id"
+          ],
+          "x": 1103.7827,
+          "y": 4179.0524000000005,
+          "direction": 2
+        },
+        "meta": {
+          "updateAt": 1779800000002,
+          "createAt": 1779800000002
+        }
+      },
+      "rel-autor-obra-autor-001": {
+        "id": "rel-autor-obra-autor-001",
+        "identification": true,
+        "relationshipType": 2,
+        "startRelationshipType": 2,
+        "start": {
+          "tableId": "tb-autor-001",
+          "columnIds": [
+            "col-autor-id"
+          ],
+          "x": 790.9153,
+          "y": 4659.934,
+          "direction": 4
+        },
+        "end": {
+          "tableId": "tb-obra-autor-001",
+          "columnIds": [
+            "col-obra-autor-autor-id"
+          ],
+          "x": 790.0215,
+          "y": 4535.1429,
+          "direction": 8
+        },
+        "meta": {
+          "updateAt": 1779800000003,
+          "createAt": 1779800000003
+        }
+      },
+      "rel-obra-obra-autor-001": {
+        "id": "rel-obra-obra-autor-001",
+        "identification": true,
+        "relationshipType": 2,
+        "startRelationshipType": 2,
+        "start": {
+          "tableId": "77887b44-bfba-497f-87a3-31c795ed4cfd",
+          "columnIds": [
+            "45b5fa59-9be8-42c3-ab8b-92da23478ae9"
+          ],
+          "x": 789.7827,
+          "y": 4247.0524000000005,
+          "direction": 8
+        },
+        "end": {
+          "tableId": "tb-obra-autor-001",
+          "columnIds": [
+            "col-obra-autor-obra-id"
+          ],
+          "x": 790.0215,
+          "y": 4407.1429,
+          "direction": 4
+        },
+        "meta": {
+          "updateAt": 1779800000004,
+          "createAt": 1779800000004
+        }
+      }
+    },
+    "indexEntities": {
+      "idx-multa-emprestimo-unique": {
+        "id": "idx-multa-emprestimo-unique",
+        "name": "uq_multa_emprestimo",
+        "tableId": "4b612336-c20d-426e-ab83-481cb5a8af58",
+        "indexColumnIds": [],
+        "seqIndexColumnIds": [],
+        "unique": true,
+        "meta": {
+          "updateAt": 1779800000013,
+          "createAt": 1779800000013
+        }
+      }
+    },
+    "indexColumnEntities": {},
+    "memoEntities": {}
+  }
+}
