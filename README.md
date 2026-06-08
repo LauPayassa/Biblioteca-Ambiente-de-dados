@@ -13,7 +13,10 @@ Este repositório contém a modelagem e os scripts da base de dados de um Sistem
 
 ## Como Visualizar os Dados
 ### Diagrama Entidade-Relacionamento (DER)
-Para visualizar os dados do DER, será necessário ter a extensão `ERD Editor` do github, feito isso, basta abrir o arquivo normalmente que os dados serão exibidos.
+Para visualizar os dados do DER, será necessário ter a extensão `ERD Editor` do VsCode, feito isso, basta abrir o arquivo `MER_Visual.erd.json` normalmente que os dados serão exibidos.
 
 ### Modelo Entidade-Relacionamento (MER)
-[Em Desenvolvimento]
+Para visualizar os dados do DER, será necessário ter a extensão `Figure` do Vscode corretamente instalada, feito isso, siga o passo a passo:
+1. Aperte o atalho (Ctrl + Shift + P) para abrir a paleta de comandos.
+2. Escreva "New Figure Sketch", selecione e aperte "Enter".
+3. Com a extensão já aberta, aperte o atalho (Ctrl + O) e selecione o arquivo `DER_Visual.excalidraw`
