@@ -4,9 +4,9 @@
   "settings": {
     "width": 5000,
     "height": 5000,
-    "scrollTop": -2295.6945,
-    "scrollLeft": -2021.5125,
-    "zoomLevel": 0.16,
+    "scrollTop": -2782.8161,
+    "scrollLeft": -1693.6489,
+    "zoomLevel": 0.31,
     "show": 431,
     "database": 4,
     "databaseName": "Biblioteca",
@@ -438,7 +438,7 @@
           "color": ""
         },
         "meta": {
-          "updateAt": 1780335161637,
+          "updateAt": 1780938221907,
           "createAt": 1779564239682
         }
       },
@@ -504,25 +504,6 @@
         "meta": {
           "updateAt": 1780345778467,
           "createAt": 1779564239682
-        }
-      },
-      "kpWVX38vJAZGFx3uAFXNE": {
-        "id": "kpWVX38vJAZGFx3uAFXNE",
-        "name": "",
-        "comment": "",
-        "columnIds": [],
-        "seqColumnIds": [],
-        "ui": {
-          "x": 956.8947,
-          "y": 1303.3656,
-          "zIndex": 3,
-          "widthName": 60,
-          "widthComment": 60,
-          "color": ""
-        },
-        "meta": {
-          "updateAt": 1780345567691,
-          "createAt": 1780345564034
         }
       }
     },
