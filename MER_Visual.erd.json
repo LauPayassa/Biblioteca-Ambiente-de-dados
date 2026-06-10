@@ -4,8 +4,8 @@
   "settings": {
     "width": 5000,
     "height": 5000,
-    "scrollTop": -2782.8161,
-    "scrollLeft": -1693.6489,
+    "scrollTop": -2365.1915,
+    "scrollLeft": -1803.0521,
     "zoomLevel": 0.31,
     "show": 431,
     "database": 4,
@@ -447,7 +447,6 @@
         "name": "multa",
         "comment": "Multas geradas por atraso nos emprestimos de livros",
         "columnIds": [
-          "5357b443-2c44-441a-a931-ce0938cd7465",
           "634798da-0628-4d73-8683-077fd1cf48e6",
           "779ae1a3-d890-48f3-93ac-103cad7473f7",
           "a0acec97-b7b9-4e2c-9356-e93f1dec129f",
@@ -456,7 +455,6 @@
           "c40c158f-2102-4a33-9597-0ec39ea25c62"
         ],
         "seqColumnIds": [
-          "5357b443-2c44-441a-a931-ce0938cd7465",
           "634798da-0628-4d73-8683-077fd1cf48e6",
           "779ae1a3-d890-48f3-93ac-103cad7473f7",
           "a0acec97-b7b9-4e2c-9356-e93f1dec129f",
@@ -465,15 +463,15 @@
           "c40c158f-2102-4a33-9597-0ec39ea25c62"
         ],
         "ui": {
-          "x": 3321.513,
-          "y": 3277.8899,
+          "x": 3326.391,
+          "y": 3291.3044,
           "zIndex": 2,
           "widthName": 60,
           "widthComment": 282,
           "color": ""
         },
         "meta": {
-          "updateAt": 1780335164309,
+          "updateAt": 1781117350474,
           "createAt": 1779564239682
         }
       },
@@ -482,27 +480,25 @@
         "name": "registro_acesso",
         "comment": "Logs de entrada e saida fisica da biblioteca via portal RFID",
         "columnIds": [
-          "1fc2c4c3-5d20-4875-b762-fea90d9c210f",
           "90a9750d-34c8-4c15-a52f-5581a678b740",
           "05c6a222-0a6f-498b-84a9-c1b38d3993f1",
           "8595233a-d82a-4859-8641-2ffb711c9f0d"
         ],
         "seqColumnIds": [
-          "1fc2c4c3-5d20-4875-b762-fea90d9c210f",
           "90a9750d-34c8-4c15-a52f-5581a678b740",
           "05c6a222-0a6f-498b-84a9-c1b38d3993f1",
           "8595233a-d82a-4859-8641-2ffb711c9f0d"
         ],
         "ui": {
-          "x": 1528.2433,
-          "y": 2234.6924,
+          "x": 1427.2433,
+          "y": 2307.6924,
           "zIndex": 2,
           "widthName": 83,
           "widthComment": 309,
           "color": ""
         },
         "meta": {
-          "updateAt": 1780345778467,
+          "updateAt": 1781117330580,
           "createAt": 1779564239682
         }
       }
@@ -664,7 +660,7 @@
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1779564239682,
+          "updateAt": 1781117537243,
           "createAt": 1779564239682
         }
       },
@@ -1748,43 +1744,23 @@
           "createAt": 1779800000012
         }
       },
-      "5357b443-2c44-441a-a931-ce0938cd7465": {
-        "id": "5357b443-2c44-441a-a931-ce0938cd7465",
-        "tableId": "4b612336-c20d-426e-ab83-481cb5a8af58",
-        "name": "id",
-        "comment": "Chave primaria da multa",
-        "dataType": "INT",
-        "default": "",
-        "options": 11,
-        "ui": {
-          "keys": 1,
-          "widthName": 60,
-          "widthComment": 131,
-          "widthDataType": 60,
-          "widthDefault": 60
-        },
-        "meta": {
-          "updateAt": 1779564239682,
-          "createAt": 1779564239682
-        }
-      },
       "634798da-0628-4d73-8683-077fd1cf48e6": {
         "id": "634798da-0628-4d73-8683-077fd1cf48e6",
         "tableId": "4b612336-c20d-426e-ab83-481cb5a8af58",
         "name": "emprestimo_id",
-        "comment": "FK para emprestimo (UNIQUE — 1:1)",
+        "comment": "FK de emprestimo (relacao 0,1)",
         "dataType": "INT",
         "default": "",
-        "options": 12,
+        "options": 10,
         "ui": {
-          "keys": 2,
+          "keys": 3,
           "widthName": 80,
-          "widthComment": 197,
+          "widthComment": 166,
           "widthDataType": 60,
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1779564239682,
+          "updateAt": 1781117361533,
           "createAt": 1779564239682
         }
       },
@@ -1888,38 +1864,18 @@
           "createAt": 1779564239682
         }
       },
-      "1fc2c4c3-5d20-4875-b762-fea90d9c210f": {
-        "id": "1fc2c4c3-5d20-4875-b762-fea90d9c210f",
-        "tableId": "f86d55fd-5905-4bf1-8789-e9de6741f035",
-        "name": "id",
-        "comment": "Chave primaria do log de acesso",
-        "dataType": "INT",
-        "default": "",
-        "options": 11,
-        "ui": {
-          "keys": 1,
-          "widthName": 60,
-          "widthComment": 174,
-          "widthDataType": 60,
-          "widthDefault": 60
-        },
-        "meta": {
-          "updateAt": 1779564239682,
-          "createAt": 1779564239682
-        }
-      },
       "90a9750d-34c8-4c15-a52f-5581a678b740": {
         "id": "90a9750d-34c8-4c15-a52f-5581a678b740",
         "tableId": "f86d55fd-5905-4bf1-8789-e9de6741f035",
         "name": "usuario_id",
-        "comment": "Chave estrangeira do usuario",
+        "comment": "Chave primaria composta e estrangeira do usuario",
         "dataType": "INT",
         "default": "",
-        "options": 8,
+        "options": 10,
         "ui": {
-          "keys": 2,
+          "keys": 3,
           "widthName": 60,
-          "widthComment": 156,
+          "widthComment": 268,
           "widthDataType": 60,
           "widthDefault": 60
         },
@@ -1932,19 +1888,19 @@
         "id": "05c6a222-0a6f-498b-84a9-c1b38d3993f1",
         "tableId": "f86d55fd-5905-4bf1-8789-e9de6741f035",
         "name": "data_hora",
-        "comment": "Data/hora do acesso fisico",
+        "comment": "Chave primaria composta, data/hora do acesso fisico",
         "dataType": "TIMESTAMP",
         "default": "",
-        "options": 8,
+        "options": 9,
         "ui": {
-          "keys": 0,
+          "keys": 1,
           "widthName": 60,
-          "widthComment": 142,
+          "widthComment": 281,
           "widthDataType": 65,
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1779564239682,
+          "updateAt": 1781117372284,
           "createAt": 1779564239682
         }
       },
@@ -2168,7 +2124,7 @@
       },
       "9879dc35-0b3e-48d2-81a7-9d56b6aaced4": {
         "id": "9879dc35-0b3e-48d2-81a7-9d56b6aaced4",
-        "identification": false,
+        "identification": true,
         "relationshipType": 2,
         "startRelationshipType": 2,
         "start": {
@@ -2185,8 +2141,8 @@
           "columnIds": [
             "634798da-0628-4d73-8683-077fd1cf48e6"
           ],
-          "x": 3321.513,
-          "y": 3389.8899,
+          "x": 3326.391,
+          "y": 3391.3044,
           "direction": 1
         },
         "meta": {
@@ -2196,7 +2152,7 @@
       },
       "18437002-a9c5-44cd-b12f-6b98617b866c": {
         "id": "18437002-a9c5-44cd-b12f-6b98617b866c",
-        "identification": false,
+        "identification": true,
         "relationshipType": 4,
         "startRelationshipType": 2,
         "start": {
@@ -2213,8 +2169,8 @@
           "columnIds": [
             "90a9750d-34c8-4c15-a52f-5581a678b740"
           ],
-          "x": 2098.2433,
-          "y": 2310.6924,
+          "x": 2085.2433,
+          "y": 2371.6924,
           "direction": 2
         },
         "meta": {
