@@ -4,10 +4,12 @@
 -- Tabelas: obra, obra_autor
 -- ============================================================
 
+USE biblioteca;
+
 -- tipo_obra:  1=Livro | 2=Tese | 3=Dissertação | 4=Periódico | 5=Monografia | 6=Rel.Técnico
 -- area:       1=BD | 2=Saúde | 3=Psic | 4=Dir | 5=Eng.SW | 6=Mat | 7=Lit | 8=Hist | 9=Adm | 14=CC
 
-INSERT IGNORE INTO obra (tipo_obra_id, area_conhecimento_id, titulo, isbn, subtitulo, categoria, numero_paginas, data_publicacao) VALUES
+INSERT INTO obra (tipo_obra_id, area_conhecimento_id, titulo, isbn, subtitulo, categoria, numero_paginas, data_publicacao) VALUES
 -- ── Livros clássicos ─────────────────────────────────────────────────────────
 (1,  1, 'Sistema de Gerenciamento de Banco de Dados',
         '978-85-352-3554-7', NULL,
@@ -95,7 +97,7 @@ INSERT IGNORE INTO obra (tipo_obra_id, area_conhecimento_id, titulo, isbn, subti
 
 -- ── Autoria (obra_autor) ─────────────────────────────────────────────────────
 -- obra_id | autor_id | ordem
-INSERT IGNORE INTO obra_autor (obra_id, autor_id, ordem) VALUES
+INSERT INTO obra_autor (obra_id, autor_id, ordem) VALUES
 -- Obra 1: SGBD — Silberschatz, Korth, Sudarshan
 (1,  1, 1), (1,  2, 2), (1,  3, 3),
 -- Obra 2: Introdução a Algoritmos — CLRS

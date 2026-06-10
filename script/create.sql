@@ -21,7 +21,8 @@ CREATE TABLE area_conhecimento
 (
   id        INT          NOT NULL AUTO_INCREMENT COMMENT 'Chave primaria da area do conhecimento',
   descricao VARCHAR(100) NOT NULL COMMENT 'Nome da area (ex: Banco de Dados, Saude, Psicologia, Direito)',
-  PRIMARY KEY (id)
+  PRIMARY KEY (id),
+  CONSTRAINT UQ_area_conhecimento_descricao UNIQUE (descricao)
 ) COMMENT 'Areas do conhecimento para classificacao das obras (ex: Banco de Dados, Saude, Psicologia)';
 
 CREATE TABLE autor
@@ -63,18 +64,16 @@ ALTER TABLE exemplar
 
 CREATE TABLE multa
 (
-  id               INT                                   NOT NULL AUTO_INCREMENT COMMENT 'Chave primaria da multa',
-  emprestimo_id    INT                                   NOT NULL COMMENT 'FK para emprestimo (UNIQUE — 1:1)',
+  emprestimo_id    INT                                   NOT NULL COMMENT 'FK de emprestimo (relacao 0,1)',
   valor_multa      DECIMAL(10,2)                         NOT NULL COMMENT 'Valor bruto calculado da multa',
   desconto         DECIMAL(10,2)                         NOT NULL DEFAULT 0.00 COMMENT 'Valor de desconto concedido',
   valor_pago       DECIMAL(10,2)                         NOT NULL DEFAULT 0.00 COMMENT 'Valor pago efetivamente',
   data_pagamento   TIMESTAMP                             NULL     COMMENT 'Data de pagamento da multa',
   status_pagamento ENUM('Pendente', 'Pago', 'Cancelado') NOT NULL DEFAULT 'Pendente' COMMENT 'Status de pagamento da multa',
-  PRIMARY KEY (id)
+  PRIMARY KEY (emprestimo_id),
+  CONSTRAINT CHK_desconto  CHECK (desconto >= 0 AND desconto <= valor_multa),
+  CONSTRAINT CHK_valor_pago CHECK (valor_pago >= 0 AND valor_pago <= (valor_multa - desconto))
 ) COMMENT 'Multas geradas por atraso nos emprestimos de livros';
-
-ALTER TABLE multa
-  ADD CONSTRAINT UQ_emprestimo_id UNIQUE (emprestimo_id);
 
 CREATE TABLE obra
 (
@@ -93,14 +92,12 @@ CREATE TABLE obra
 ALTER TABLE obra
   ADD CONSTRAINT UQ_isbn UNIQUE (isbn);
 
-ALTER TABLE obra
-  ADD CONSTRAINT UQ_subtitulo UNIQUE (subtitulo);
 
 CREATE TABLE obra_autor
 (
   obra_id  INT     NOT NULL COMMENT 'FK para obra',
   autor_id INT     NOT NULL COMMENT 'FK para autor',
-  ordem    TINYINT NULL     DEFAULT 1 COMMENT 'Ordem de autoria (1=principal)',
+  ordem    TINYINT NOT NULL DEFAULT 1 COMMENT 'Ordem de autoria (1=principal)',
   PRIMARY KEY (obra_id, autor_id)
 ) COMMENT 'Tabela associativa N:N entre obra e autor';
 
@@ -119,18 +116,18 @@ ALTER TABLE professor
 
 CREATE TABLE registro_acesso
 (
-  id          INT                      NOT NULL AUTO_INCREMENT COMMENT 'Chave primaria do log de acesso',
-  usuario_id  INT                      NOT NULL COMMENT 'Chave estrangeira do usuario',
-  data_hora   TIMESTAMP                NOT NULL COMMENT 'Data/hora do acesso fisico',
+  usuario_id  INT                      NOT NULL COMMENT 'Parte da chave primaria composta, chave estrangeira do usuario',
+  data_hora   TIMESTAMP                NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT 'Parte da chave primaria composta, data/hora do acesso fisico',
   tipo_acesso ENUM('Entrada', 'Saida') NOT NULL COMMENT 'Sentido de acesso: Entrada ou Saida',
-  PRIMARY KEY (id)
+  PRIMARY KEY (usuario_id, data_hora)
 ) COMMENT 'Logs de entrada e saida fisica da biblioteca via portal RFID';
 
 CREATE TABLE tipo_obra
 (
   id        INT         NOT NULL AUTO_INCREMENT COMMENT 'Chave primaria do tipo de obra',
   descricao VARCHAR(50) NOT NULL COMMENT 'Descricao do tipo (ex: Livro, Tese, Dissertacao, Periodico)',
-  PRIMARY KEY (id)
+  PRIMARY KEY (id),
+  CONSTRAINT UQ_tipo_obra_descricao UNIQUE (descricao)
 ) COMMENT 'Tabela auxiliar com os tipos de obra disponiveis';
 
 CREATE TABLE usuario
@@ -237,4 +234,3 @@ ALTER TABLE obra_autor
   ADD CONSTRAINT FK_obra_TO_obra_autor
     FOREIGN KEY (obra_id)
     REFERENCES obra (id);
-

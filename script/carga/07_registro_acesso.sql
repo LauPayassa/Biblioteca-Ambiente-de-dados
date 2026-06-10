@@ -4,10 +4,12 @@
 -- Tabela: registro_acesso
 -- ============================================================
 
+USE biblioteca;
+
 -- Padrão: cada visita gera um par Entrada + Saída
 -- Os 15 usuários são distribuídos ao longo de dias recentes
 
-INSERT IGNORE INTO registro_acesso (usuario_id, data_hora, tipo_acesso) VALUES
+INSERT INTO registro_acesso (usuario_id, data_hora, tipo_acesso) VALUES
 -- ── 2026-06-08 (hoje) ────────────────────────────────────────
 (1,  '2026-06-08 08:05:00', 'Entrada'),
 (1,  '2026-06-08 11:42:00', 'Saida'),

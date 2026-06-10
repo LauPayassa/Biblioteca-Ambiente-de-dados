@@ -3,7 +3,9 @@
 -- Tabela: autor
 -- ============================================================
 
-INSERT IGNORE INTO autor (nome, link_lattes) VALUES
+USE biblioteca;
+
+INSERT INTO autor (nome, link_lattes) VALUES
 -- Autores internacionais (sem Lattes)
 ('Abraham Silberschatz',   NULL),  -- id 1
 ('Henry F. Korth',         NULL),  -- id 2

@@ -3,11 +3,13 @@
 -- Tabelas: usuario, aluno, professor, usuario_endereco, usuario_telefone
 -- ============================================================
 
+USE biblioteca;
+
 -- RFID do cartão: US + 10 dígitos (12 chars)
 -- ─────────────────────────────────────────────────────────────
 -- 1. USUÁRIOS BASE
 -- ─────────────────────────────────────────────────────────────
-INSERT IGNORE INTO usuario (nome, email, rfid_cartao, data_nascimento, status_ativo) VALUES
+INSERT INTO usuario (nome, email, rfid_cartao, data_nascimento, status_ativo) VALUES
 -- Alunos (id 1..10)
 ('Lucas Silva Ferreira',       'lucas.ferreira@universidade.edu.br',   'US0000000001', '2001-03-15', 'Ativo'),
 ('Ana Carolina Rodrigues',     'ana.rodrigues@universidade.edu.br',    'US0000000002', '2002-07-22', 'Ativo'),
@@ -29,7 +31,7 @@ INSERT IGNORE INTO usuario (nome, email, rfid_cartao, data_nascimento, status_at
 -- ─────────────────────────────────────────────────────────────
 -- 2. ALUNOS (tabela filha: id = usuario.id)
 -- ─────────────────────────────────────────────────────────────
-INSERT IGNORE INTO aluno (id, matricula, curso, situacao_academica) VALUES
+INSERT INTO aluno (id, matricula, curso, situacao_academica) VALUES
 (1,  '2021001234', 'Ciência da Computação',        'Ativa'),
 (2,  '2022005678', 'Sistemas de Informação',        'Ativa'),
 (3,  '2020009012', 'Engenharia de Software',        'Ativa'),
@@ -44,7 +46,7 @@ INSERT IGNORE INTO aluno (id, matricula, curso, situacao_academica) VALUES
 -- ─────────────────────────────────────────────────────────────
 -- 3. PROFESSORES (tabela filha: id = usuario.id)
 -- ─────────────────────────────────────────────────────────────
-INSERT IGNORE INTO professor (id, registro_funcional, departamento, titulacao, cargo) VALUES
+INSERT INTO professor (id, registro_funcional, departamento, titulacao, cargo) VALUES
 (11, 'PROF-2005-0042', 'Departamento de Computação',        'Doutor',      'Professor Associado'),
 (12, 'PROF-2010-0087', 'Departamento de Ciências Humanas',  'Doutora',     'Professora Adjunta'),
 (13, 'PROF-2000-0015', 'Departamento de Computação',        'Doutor',      'Professor Titular'),
@@ -54,7 +56,7 @@ INSERT IGNORE INTO professor (id, registro_funcional, departamento, titulacao, c
 -- ─────────────────────────────────────────────────────────────
 -- 4. ENDEREÇOS
 -- ─────────────────────────────────────────────────────────────
-INSERT IGNORE INTO usuario_endereco (usuario_id, logradouro, numero, complemento, bairro, cidade, estado, cep) VALUES
+INSERT INTO usuario_endereco (usuario_id, logradouro, numero, complemento, bairro, cidade, estado, cep) VALUES
 (1,  'Rua das Acácias',         '123', 'Apto 45',    'Jardim Primavera',  'São Paulo',      'SP', '01310-100'),
 (2,  'Avenida Brasil',          '456', NULL,         'Centro',            'Rio de Janeiro', 'RJ', '20040-020'),
 (3,  'Rua Dom Pedro II',        '78',  'Casa',       'Vila Nova',         'Belo Horizonte', 'MG', '30130-140'),
@@ -74,7 +76,7 @@ INSERT IGNORE INTO usuario_endereco (usuario_id, logradouro, numero, complemento
 -- ─────────────────────────────────────────────────────────────
 -- 5. TELEFONES
 -- ─────────────────────────────────────────────────────────────
-INSERT IGNORE INTO usuario_telefone (usuario_id, numero, tipo) VALUES
+INSERT INTO usuario_telefone (usuario_id, numero, tipo) VALUES
 (1,  '(11) 99123-4567', 'Celular'),
 (2,  '(21) 98765-4321', 'Celular'),
 (2,  '(21) 3344-5566',  'Residencial'),

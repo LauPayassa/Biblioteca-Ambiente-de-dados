@@ -5,6 +5,8 @@
 -- Data de referência: 2026-06-08
 -- ============================================================
 
+USE biblioteca;
+
 -- ─────────────────────────────────────────────────────────────
 -- LEGENDA DE STATUS (calculado em tempo de consulta, não em coluna):
 --   Ativo     → data_devolucao_real IS NULL AND data_previsao_devolucao >= CURRENT_DATE

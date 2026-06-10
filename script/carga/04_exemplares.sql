@@ -4,11 +4,13 @@
 -- Tabela: exemplar
 -- ============================================================
 
+USE biblioteca;
+
 -- RFID pattern: EX + 10 dígitos (12 chars total)
 -- estado_conservacao: Novo | Bom | Regular | Danificado
 -- status: Disponivel | Emprestado | Consulta Local | Manutencao | Extraviado | Descartado
 
-INSERT IGNORE INTO exemplar (obra_id, codigo_rfid, status, estado_conservacao, data_aquisicao) VALUES
+INSERT INTO exemplar (obra_id, codigo_rfid, status, estado_conservacao, data_aquisicao) VALUES
 -- ── Obra 1: SGBD (3 exemplares) ──────────────────────────────────────────────
 (1, 'EX0000000001', 'Disponivel',    'Bom',       '2021-02-10'),  -- ex id 1
 (1, 'EX0000000002', 'Disponivel',    'Bom',       '2021-02-10'),  -- ex id 2

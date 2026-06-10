@@ -9,7 +9,7 @@ WITH volumes AS (
     COUNT(*)                                             AS total_acervo,
     SUM(status = 'Emprestado')                           AS emprestados
   FROM exemplar
-  WHERE status != 'Descartado'
+  WHERE status <> 'Descartado' OR status IS NULL
   GROUP BY obra_id
 ),
 
@@ -47,11 +47,11 @@ SELECT
   COALESCE(mp.total_pago,    0.00)       AS multas_pagas
 
 FROM area_conhecimento ac
-LEFT JOIN obra          o   ON o.area_conhecimento_id = ac.id
-LEFT JOIN tipo_obra     tp  ON tp.id  = o.tipo_obra_id
-LEFT JOIN volumes       v   ON v.obra_id  = o.id
-LEFT JOIN atrasos       at  ON at.obra_id = o.id
-LEFT JOIN multas_pagas  mp  ON mp.obra_id = o.id
+JOIN  obra             o   ON o.area_conhecimento_id = ac.id
+JOIN  tipo_obra        tp  ON tp.id  = o.tipo_obra_id
+LEFT JOIN volumes      v   ON v.obra_id  = o.id
+LEFT JOIN atrasos      at  ON at.obra_id = o.id
+LEFT JOIN multas_pagas mp  ON mp.obra_id = o.id
 
 ORDER BY
   ac.descricao,

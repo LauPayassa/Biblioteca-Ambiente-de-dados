@@ -3,7 +3,9 @@
 -- Tabelas: tipo_obra, area_conhecimento
 -- ============================================================
 
-INSERT IGNORE INTO tipo_obra (descricao) VALUES
+USE biblioteca;
+
+INSERT INTO tipo_obra (descricao) VALUES
 ('Livro'),           -- id 1
 ('Tese'),            -- id 2
 ('Dissertação'),     -- id 3
@@ -11,7 +13,7 @@ INSERT IGNORE INTO tipo_obra (descricao) VALUES
 ('Monografia'),      -- id 5
 ('Relatório Técnico'); -- id 6
 
-INSERT IGNORE INTO area_conhecimento (descricao) VALUES
+INSERT INTO area_conhecimento (descricao) VALUES
 ('Banco de Dados'),          -- id 1
 ('Saúde'),                   -- id 2
 ('Psicologia'),              -- id 3
